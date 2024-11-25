@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LaraFilmes</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabeçalho">
+      <div class="container">
+        <input type="checkbox" id="menu" class="container__botao">
+        <label for="menu">
+          <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+        </label>
+        <ul class="lista-menu">
+          <li class="lista-menu__titulo">Categorias</li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Favoritos</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Minha Lista</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Mais vendidos</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Loja</a>
+          </li>
+          <li class="lista-menu__item">
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+        <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+        <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+      </div>
+    </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Bem vindos ao Cinema Digital</h2>
+    <p class="banner__texto">Encontre os melhores filmes de todos os tempos</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será seu próximo filme?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Melhores</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/IN.jpg"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="img/VE.webp"
+            alt="Livro sobre liderança em design design da alura books"></div>
+        <div class="swiper-slide"><img src="img/GI.jpg" alt="Livro sobre javascript assertivo da alura books">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/COMO.webp" alt="Livro Guia front end" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/NA.webp" alt="Livro sobre portugol" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/HA.webp" alt="Livro sobre acessibilidade" />
+        </div>
+      </div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+        <!-- 1º linha -->
+        <div class="card__descrição">
+          <!-- 1º coluna -->
+          <div class="descrição">
+            <h3 class="descrição__titulo">Mais assistido do Mês</h3>
+            <h2 class="descrição__titulo-livro">Interestelar</h2>
+            <p class="descrição__texto">As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie.
+            </p>
+          </div>
+  
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+          
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais Procurados</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/UP.webp"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="img/MA.jpg" alt="Livro sobre liderança em design da alura books">
+        </div>
+        <div class="swiper-slide"><img src="img/TI.webp" alt="Livro sobre javascript assertivo da alurabooks">
+        </div>
+        <div class="swiper-slide"><img src="img/TRA.jpg" alt="Livro Guia front end"></div>
+        <div class="swiper-slide"><img src="img/VIN.webp" alt="Livro sobre portugol"></div>
+        <div class="swiper-slide"><img src="img/WI.jpg" alt="livro sobre acessibilidade"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+        <!-- 1º linha -->
+        <div class="card__descrição">
+          <!-- 1º coluna -->
+          <div class="descrição">
+            <h3 class="descrição__titulo">Recomendação do Mês</h3>
+            <h2 class="descrição__titulo-livro">Wicked</h2>
+            <p class="descrição__texto">Na Terra de Oz, uma jovem chamada Elphaba forma uma improvável amizade com uma estudante popular chamada Glinda.
+            </p>
+          </div>
+  
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+          
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Romance<picture>
+        <source media="(o)" srcset="">
+        <img src="" alt="">
+      </picture></a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Suspense</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Comédia Romantica</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Animação</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Fantasia</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Terror</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Clássicos</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Ficção Cientifica</a>
+      </li>
+    </ul>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
